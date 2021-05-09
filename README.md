@@ -1,1 +1,2 @@
-# goit-markup-hw-03
+﻿# goit-markup-hw-03
+Home work #3. Flex
