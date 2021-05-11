@@ -37,8 +37,9 @@ body {
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 h1,
@@ -48,14 +49,26 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   font-weight: 700;
   line-height: 1.67;
@@ -75,6 +88,12 @@ a {
 }
 
 /* ============== header ============= */
+header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
+}
+
 .header-nav .link {
   font-size: 14px;
   font-weight: 500;
@@ -104,10 +123,13 @@ a {
 
 /* ============ hero ================ */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--bg-dark);
 }
 
 .hero-title {
+  margin-bottom: 30px;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -136,6 +158,10 @@ a {
 }
 
 /* ============ features =============== */
+.features {
+  padding-bottom: 47px;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -151,6 +177,8 @@ a {
 }
 
 .feature-title {
+  margin-bottom: 10px;
+
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -162,12 +190,30 @@ a {
   color: var(--second-color);
 }
 
+/* ============== work ================== */
+.work {
+  padding-top: 47px;
+}
+
 /* ============= our team =============== */
 .members {
   background-color: #f5f4fa;
 }
 
+.member-card {
+  padding-bottom: 30px;
+  width: 270px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-color);
+}
+
+.member-photo {
+  margin-bottom: 30px;
+}
+
 .members .member-name {
+  margin-bottom: 10px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
@@ -184,15 +230,24 @@ a {
 
 /* ============ footer ================ */
 footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bg-dark);
 }
 
 footer .logo {
+  margin-bottom: 20px;
+
+  display: inline-block;
   color: var(--white-color);
 }
 
 address {
   font-style: normal;
+}
+
+.contacts-list li:not(:last-child) {
+  padding-bottom: 9px;
 }
 
 .contact-map {
@@ -212,6 +267,10 @@ address {
 }
 
 /* =============== portfolio ================== */
+.filter {
+  margin-bottom: 50px;
+}
+
 .portfolio .filter-button {
   font-weight: 500;
   font-size: 16px;
@@ -226,7 +285,25 @@ address {
   background-color: var(--accent-color);
 }
 
+.card {
+  margin-bottom: 30px;
+
+  display: inline-block;
+  width: 370px;
+}
+
+.card-image {
+}
+
+.card-title {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+
 .card .card-name {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
