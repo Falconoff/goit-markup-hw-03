@@ -5,6 +5,9 @@
   --white-color: #fff;
   --bg-dark: #2f303a;
   --btn-hover: #188ce8;
+  --bg-our-team: #f5f4fa;
+  --bg-filter-btn: #f5f4fa;
+  --brd-card-title: #eeeeee;
 }
 
 /*========== common =========== */
@@ -17,22 +20,6 @@ body {
   letter-spacing: 0.03em;
 
   background-color: var(--white-color);
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  /* outline: 1px dotted red; */
-}
-
-.btn {
-  border-radius: 4px;
-  padding: 6px 22px;
-  cursor: pointer;
-  border-color: transparent;
 }
 
 ul {
@@ -61,6 +48,21 @@ img {
   display: block;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+  border-color: transparent;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -70,7 +72,6 @@ img {
   margin-bottom: 50px;
 
   font-size: 36px;
-  font-weight: 700;
   line-height: 1.67;
   text-align: center;
 }
@@ -112,7 +113,6 @@ header {
 
 header .container {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -206,7 +206,6 @@ header .container {
 
 .features-list {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .features-list .feature:not(:last-child) {
@@ -248,7 +247,7 @@ header .container {
 
 /* ============= our team =============== */
 .members {
-  background-color: #f5f4fa;
+  background-color: var(--bg-our-team);
 }
 
 .members-list {
@@ -333,7 +332,6 @@ address {
 .portfolio .filter {
   margin-bottom: 50px;
   display: flex;
-  /* outline: 1px solid gold; */
   justify-content: center;
 }
 
@@ -346,7 +344,7 @@ address {
   font-size: 16px;
   line-height: 1.62;
 
-  background-color: #f5f4fa;
+  background-color: var(--bg-filter-btn);
 }
 
 .portfolio .filter-button:focus,
@@ -371,7 +369,7 @@ address {
 
 .card-title {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--brd-card-title);
   border-top: 0;
 }
 
